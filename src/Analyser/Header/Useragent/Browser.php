@@ -169,8 +169,6 @@ trait Browser
                     $this->data->browser->using = new Using([ 'name' => 'Chromium WebView', 'version' => new Version([ 'value' => explode('.', $version)[0] ]) ]);
                     $this->data->browser->type = Constants\BrowserType::UNKNOWN;
                     $this->data->browser->stock = true;
-                    $this->data->browser->name = null;
-                    $this->data->browser->version = null;
                     $this->data->browser->channel = null;
                 }
 
@@ -179,8 +177,6 @@ trait Browser
                     $this->data->browser->using = new Using([ 'name' => 'Chromium WebView', 'version' => new Version([ 'value' => explode('.', $version)[0] ]) ]);
                     $this->data->browser->type = Constants\BrowserType::UNKNOWN;
                     $this->data->browser->stock = true;
-                    $this->data->browser->name = null;
-                    $this->data->browser->version = null;
                     $this->data->browser->channel = null;
                 }
 
