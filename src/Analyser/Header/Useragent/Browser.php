@@ -168,6 +168,8 @@ trait Browser
                 if (implode('.', array_slice(explode('.', $version), 1, 2)) == '0.0' && (preg_match('/Version\//u', $ua) || preg_match('/Release\//u', $ua))) {
                     $this->data->browser->using = new Using([ 'name' => 'Chromium WebView', 'version' => new Version([ 'value' => explode('.', $version)[0] ]) ]);
                     $this->data->browser->type = Constants\BrowserType::UNKNOWN;
+                    $this->data->browser->name = null;
+                    $this->data->browser->version = null;
                     $this->data->browser->stock = true;
                     $this->data->browser->channel = null;
                 }
@@ -176,6 +178,8 @@ trait Browser
                 if (preg_match('/; wv\)/u', $ua)) {
                     $this->data->browser->using = new Using([ 'name' => 'Chromium WebView', 'version' => new Version([ 'value' => explode('.', $version)[0] ]) ]);
                     $this->data->browser->type = Constants\BrowserType::UNKNOWN;
+                    $this->data->browser->name = null;
+                    $this->data->browser->version = null;
                     $this->data->browser->stock = true;
                     $this->data->browser->channel = null;
                 }
